@@ -1,5 +1,10 @@
-.headshot-img {
+.headshot {
   width: 200px;
   height: auto;
   border-radius: 100px;
+}
+
+.project-images {
+  width: 400px;
+  height: auto;
 }
