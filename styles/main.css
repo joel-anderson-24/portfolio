@@ -34,6 +34,10 @@ nav ul li a:hover {
   color: black;
 }
 
+.name {
+  margin-bottom: 30px;
+}
+
 .container {
   max-width: 800px;
   margin: 20px auto;
@@ -42,7 +46,7 @@ nav ul li a:hover {
 
 .container h2 {
   color: #35614b;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .container h3 {
@@ -55,22 +59,9 @@ nav ul li a:hover {
 }
 
 .headshot {
-  width: 100px;
+  width: 200px;
   height: auto;
   border-radius: 100px;
-}
-
-.project-images {
-  width: 300px;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-.project-images-at,
-.project-images-blog {
-  width: auto;
-  height: 400px;
-  margin-bottom: 20px;
 }
 
 .container button {
@@ -98,13 +89,66 @@ nav ul li a:hover {
   background-color: greenyellow;
 }
 
-img {
+.project-info img {
   border: 2px solid black;
   border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.project-images-at,
+.project-images-blog {
+  width: auto;
+  height: 400px;
 }
 
 .project-info {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (max-width: 425px) {
+  .project-images,
+  .project-images-at,
+  .project-images-blog {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .project-images-at,
+  .project-images-blog {
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .headshot {
+    width: 80px;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    display: block;
+  }
+
+  .project-images,
+  .project-images-at,
+  .project-images-blog {
+    max-width: 100%;
+    margin-bottom: 10px;
+    width: auto;
+    height: 300px;
+    margin-bottom: 20px;
+  }
 }
